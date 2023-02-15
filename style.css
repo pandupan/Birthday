@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Bad Script", cursive;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 52px;
+}
+
+nav a:hover {
+  color: #50539f !important;
+  font-weight: bold;
+}
+nav a {
+  font-family: "Courier New";
+  margin: 0 10px;
+  font-weight: bold;
+}
+#started img {
+  border-radius: 20px;
+}
+#header {
+  margin-bottom: 140px;
+}
+#forYou {
+  background-color: #50539f;
+  padding: 100px 0;
+  margin-top: -40px;
+}
+#forYou .card-item {
+  margin-top: 30px;
+}
+#forYou .btn-main:hover {
+  cursor: pointer;
+  color: white;
+}
+#forYou img {
+  height: 140px !important;
+}
+#forYou h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+#started {
+  background-color: #50539f;
+  padding: 100px 0;
+  margin-top:-40px;
+}
+#gallery {
+  margin: 100px 0;
+}
+#gallery img {
+  margin-top: 40px;
+  width: 100%;
+  height: 36vh;
+  border-radius: 30px;
+}
+#gallery .item {
+  position: relative;
+  cursor: pointer;
+}
+#gallery .item .caption {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  display: flex;
+  padding: 0 10px;
+  color: white;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 36vh;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#gallery .item:hover .caption {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.card-item {
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 18rem;
+  margin: 0 4px;
+  background-color: white;
+}
+.card-item:nth-child(1) {
+  background-color: #dee3f4;
+}
+.card-item:nth-child(2) {
+  background-color: #e4c1e1;
+}
+.card-item:nth-child(3) {
+  background-color: #d5e6e7;
+}
+.card-item:nth-child(1) > a {
+  background-color: #6f8be7;
+}
+.card-item:nth-child(2) > a {
+  background-color: #d95ece;
+}
+.card-item:nth-child(3) > a {
+  background-color: #55dde5;
+}
+.btn-main {
+  border-radius: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  font-family: "Courier New";
+}
+
+/* animasi ultah */
+.confetti {
+  position: absolute;
+  width: 380px;
+  height: 600px;
+  left: 100px;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .confetti {
+    left: 30px;
+  }
+}
+.squareOne,
+.squareTwo,
+.squareThree,
+.squareFour,
+.squareFive,
+.squareSix,
+.squareSeven,
+.squareEight,
+.squareNine,
+.squareTen {
+  position: absolute;
+  width: 10px;
+  height: 25px;
+  top: -110px;
+}
+
+.squareOne {
+  background-color: #ef476f;
+  animation: down 2.5s linear infinite;
+  left: 50px;
+}
+
+.squareTwo {
+  background-color: #06d6a0;
+  animation: down 2.3s linear infinite 0.2s;
+  left: 150px;
+}
+
+.squareThree {
+  background-color: #118ab2;
+  animation: down 2.4s linear infinite 0.4s;
+  left: 250px;
+}
+
+.squareFour {
+  background-color: #ffbe0b;
+  animation: down 2.7s linear infinite 0.1s;
+  left: 300px;
+}
+
+.squareFive {
+  background-color: #118ab2;
+  animation: down 2.6s linear infinite 0.7s;
+  left: 5px;
+}
+
+@keyframes down {
+  0% {
+    top: -110px;
+    transform: rotate(0deg) rotateY(-90deg);
+    opacity: 1;
+  }
+  100% {
+    top: 400px;
+    transform: rotate(360deg) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes downTwo {
+  0% {
+    top: -130px;
+    transform: rotate(0deg) rotateY(90deg);
+    opacity: 1;
+  }
+  100% {
+    top: 400px;
+    transform: rotate(-360deg) rotateY(-180deg);
+    opacity: 0;
+  }
+}
+
+.squareSix {
+  background-color: #ffbe0b;
+  animation: downTwo 2.4s linear infinite 0.2s;
+  left: 70px;
+}
+
+.squareSeven {
+  background-color: #ef476f;
+  animation: downTwo 2.1s linear infinite 0.7s;
+  left: 170px;
+}
+
+.squareEight {
+  background-color: #ef476f;
+  animation: downTwo 2.4s linear infinite 0.9s;
+  left: 280px;
+}
+
+.squareNine {
+  background-color: #06d6a0;
+  animation: downTwo 2.9s linear infinite 0.9s;
+  left: 50px;
+}
+
+.squareTen {
+  background-color: #118ab2;
+  animation: downTwo 2.2s linear infinite 1.1s;
+  left: 350px;
+}
+
+/* end */
+
+/* for you wave */
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-top: -90px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+table {
+  text-align: center;
+}
+#cross {
+  font-family: "Courier New";
+  font-size: 18px;
+}
+td {
+  width: 40px;
+  height: 40px;
+}
+
+td input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.block {
+  background-color: #000;
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+/* end */
