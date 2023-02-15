@@ -24,12 +24,7 @@
   <body>
 
     <body>
-    <audio source="./assets/Komang - Raim Laode ( Official Lirik )_d-vk4Yk14xI.mp3" id="my_audio" loop="loop"></audio>
-    <script type="text/javascript">
-      window.onload=function(){
-        document.getElementById("my_audio").play();
-      }
-    </script>
+
 
 
     <!-- Animasi confetti -->
@@ -76,6 +71,9 @@
             <h1>Happy Birthday</h1>
             <h5 class="my-4">To My Dear</h5>
             <h2>Irsalina Yumna</h2>
+            <br>
+            <input type="button" value="Ur Fav Music Here!!" onclick="play()">
+            <audio id="audio" src="./assets/Komang - Raim Laode ( Official Lirik )_d-vk4Yk14xI.mp3" loop></audio>
           </div>
           <div class="col-12 col-md-6" data-aos="fade-up">
             <img src="assets/images/avatar.png" class="w-100 rounded" />
@@ -550,8 +548,14 @@
       </div>
     </div>
     <!-- end modal -->
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
 
-    <script
+    <script>
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
