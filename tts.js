@@ -56,7 +56,7 @@ function catString(cn) {
 
 // modif jawaban
 function submitString(concat, tipe, tabel) {
-  if (concat.toUpperCase() == "MACTHA" && tipe == "m1") {
+  if (concat.toUpperCase() == "MATCHA" && tipe == "m1") {
     pengulanganTabel(tabel);
   } else if (concat.toUpperCase() == "DUA" && tipe == "d1") {
     pengulanganTabel(tabel);
