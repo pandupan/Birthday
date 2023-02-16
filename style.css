@@ -20,6 +20,15 @@ nav a {
   margin: 0 10px;
   font-weight: bold;
 }
+nav input:hover {
+  color: #50539f !important;
+  font-weight: bold;
+}
+nav input {
+  font-family: "Courier New";
+  margin: 0 10px;
+  font-weight: bold;
+}
 #started img {
   border-radius: 20px;
 }
